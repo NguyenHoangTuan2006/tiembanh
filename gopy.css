@@ -1,0 +1,163 @@
+/* --- Cài đặt chung & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Tahoma, sans-serif;
+    background-color: #f4f4f4; /* Màu nền xám nhẹ cho toàn trang */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng mềm */
+    border-radius: 8px;
+    overflow: hidden; /* Đảm bảo các góc bo tròn được áp dụng */
+}
+
+/* --- Header & Menu --- */
+header {
+    width: 100%;
+}
+
+.menutop {
+    background-color: #b20054;
+    width: 100%;
+}
+
+.menutop ul {
+    list-style-type: none;
+    display: flex; /* Sử dụng Flexbox để căn chỉnh menu */
+    justify-content: center; /* Căn giữa các mục menu */
+}
+
+.menutop li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.menutop li a:hover {
+    background-color: #8e0043; /* Màu đậm hơn khi hover */
+    color: #fff;
+}
+
+.menutop li a.active {
+    background-color: #7a003a; /* Màu khác cho trang đang hoạt động */
+    font-weight: bold;
+}
+
+
+/* --- Banner --- */
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+}
+
+/* --- Nội dung chính & Form --- */
+.content {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #b20054;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Căn trái các label */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #b20054;
+    box-shadow: 0 0 5px rgba(178, 0, 84, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical; /* Cho phép thay đổi chiều cao */
+    min-height: 120px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #b20054;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #8e0043;
+    transform: translateY(-2px); /* Hiệu ứng nhấc nút lên một chút */
+}
+
+/* --- Footer --- */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer p {
+    margin: 0;
+}

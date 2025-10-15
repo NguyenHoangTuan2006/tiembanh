@@ -1,0 +1,207 @@
+/* --- Cài đặt chung & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+a {
+    color: #b20054;
+    text-decoration: none;
+}
+
+/* --- Header & Menu --- */
+.menutop {
+    background-color: #b20054;
+}
+
+.menutop ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menutop li a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.menutop li:last-child a {
+    border-right: none;
+}
+
+.menutop li a:hover {
+    background-color: #8e0043;
+}
+
+.menutop li a.active {
+    background-color: #7a003a;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Bố cục nội dung chính --- */
+.main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Khoảng cách giữa 2 cột */
+}
+
+.sidebar {
+    width: 270px;
+    flex-shrink: 0; /* Không cho cột này co lại */
+}
+
+.news-feed {
+    flex-grow: 1; /* Cho cột này lấp đầy không gian còn lại */
+}
+
+/* --- Cột trái (Sidebar) --- */
+.category-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    background-color: #b20054;
+    color: white;
+    padding: 10px;
+}
+
+.category-header img {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.category-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.category-list li {
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+.category-list li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    padding-left: 30px;
+}
+/* Thêm icon > bằng CSS */
+.category-list li a::before {
+    content: '›';
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    color: #b20054;
+}
+
+
+.category-list li a:hover {
+    background-color: #f5f5f5;
+    color: #b20054;
+}
+
+.sidebar-promo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* --- Cột phải (News Feed) --- */
+.news-item {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa ảnh và chữ */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+    border-radius: 5px;
+    padding: 10px;
+}
+.news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.news-item:hover {
+    transform: translateY(-5px); /* Nhấc bài viết lên một chút */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.news-item img {
+    width: 140px;
+    height: 90px;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.news-content h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.news-content p {
+    font-size: 15px;
+    text-align: justify;
+    color: #666;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #b20054;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+.footer p:last-child{
+    margin-bottom: 0;
+}
