@@ -1,4 +1,4 @@
-/* --- Cài đặt chung & Reset --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-/* --- Header & Menu --- */
+
 .menutop {
     background-color: #b20054;
 }
@@ -45,7 +45,7 @@ a {
     font-weight: 500;
     padding: 12px 20px;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+    transition: background-color 0.3s; 
 }
 
 .menutop li:last-child a {
@@ -67,23 +67,23 @@ a {
     display: block;
 }
 
-/* --- Bố cục nội dung chính --- */
+
 .main-content {
     display: flex;
     padding: 20px;
-    gap: 20px; /* Khoảng cách giữa 2 cột */
+    gap: 20px; 
 }
 
 .sidebar {
     width: 270px;
-    flex-shrink: 0; /* Không cho cột này co lại */
+    flex-shrink: 0;
 }
 
 .news-feed {
-    flex-grow: 1; /* Cho cột này lấp đầy không gian còn lại */
+    flex-grow: 1;
 }
 
-/* --- Cột trái (Sidebar) --- */
+
 .category-box {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -128,7 +128,7 @@ a {
     position: relative;
     padding-left: 30px;
 }
-/* Thêm icon > bằng CSS */
+
 .category-list li a::before {
     content: '›';
     position: absolute;
@@ -148,14 +148,14 @@ a {
     border-radius: 5px;
 }
 
-/* --- Cột phải (News Feed) --- */
+
 .news-item {
     display: flex;
-    gap: 15px; /* Khoảng cách giữa ảnh và chữ */
+    gap: 15px; 
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #e0e0e0;
-    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+    transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 5px;
     padding: 10px;
 }
@@ -164,7 +164,7 @@ a {
     margin-bottom: 0;
 }
 .news-item:hover {
-    transform: translateY(-5px); /* Nhấc bài viết lên một chút */
+    transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -172,7 +172,7 @@ a {
 .news-item img {
     width: 140px;
     height: 90px;
-    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    object-fit: cover;
     border-radius: 5px;
     flex-shrink: 0;
 }
@@ -189,7 +189,7 @@ a {
     color: #666;
 }
 
-/* --- Footer --- */
+
 .footer {
     background-color: #b20054;
     color: white;
@@ -204,4 +204,5 @@ a {
 }
 .footer p:last-child{
     margin-bottom: 0;
+
 }
